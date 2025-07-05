@@ -1,48 +1,137 @@
+@import "tailwindcss";
+/* npx @tailwindcss/cli -i ./src/index.css -o ./src/output.css --watch
+
+Run this for activating tailwind*/
 :root,
 :host {
-    --md-sys-color-background: #10150e;
-    --md-sys-color-on-background: #e0e4d9;
-    --md-sys-color-surface: #10150e;
-    --md-sys-color-surface-dim: #10150e;
-    --md-sys-color-surface-bright: #363b33;
-    --md-sys-color-surface-container-lowest: #0b0f09;
-    --md-sys-color-surface-container-low: #181d16;
-    --md-sys-color-surface-container: #1c211a;
-    --md-sys-color-surface-container-high: #262b24;
-    --md-sys-color-surface-container-highest: #31362f;
-    --md-sys-color-on-surface: #e0e4d9;
-    --md-sys-color-surface-variant: #40493c;
-    --md-sys-color-on-surface-variant: #c0cab8;
-    --md-sys-color-inverse-surface: #e0e4d9;
-    --md-sys-color-inverse-on-surface: #2d322a;
-    --md-sys-color-outline: #8a9484;
-    --md-sys-color-outline-variant: #40493c;
+    --md-sys-color-background: #0f1510;
+    --md-sys-color-on-background: #dfe4db;
+    --md-sys-color-surface: #0f1510;
+    --md-sys-color-surface-dim: #0f1510;
+    --md-sys-color-surface-bright: #353b35;
+    --md-sys-color-surface-container-lowest: #0a0f0b;
+    --md-sys-color-surface-container-low: #181d18;
+    --md-sys-color-surface-container: #1c211c;
+    --md-sys-color-surface-container-high: #262b26;
+    --md-sys-color-surface-container-highest: #313630;
+    --md-sys-color-on-surface: #dfe4db;
+    --md-sys-color-surface-variant: #3f493f;
+    --md-sys-color-on-surface-variant: #becabc;
+    --md-sys-color-inverse-surface: #dfe4db;
+    --md-sys-color-inverse-on-surface: #2c322c;
+    --md-sys-color-outline: #889487;
+    --md-sys-color-outline-variant: #3f493f;
     --md-sys-color-shadow: #000000;
     --md-sys-color-scrim: #000000;
-    --md-sys-color-surface-tint: #89da79;
-    --md-sys-color-primary: #89da79;
-    --md-sys-color-on-primary: #003a02;
-    --md-sys-color-primary-container: #2b7925;
-    --md-sys-color-on-primary-container: #ffffff;
-    --md-sys-color-inverse-primary: #1e6d1a;
-    --md-sys-color-secondary: #aed0a2;
-    --md-sys-color-on-secondary: #1b3716;
-    --md-sys-color-secondary-container: #274422;
-    --md-sys-color-on-secondary-container: #b8daab;
-    --md-sys-color-tertiary: #84cfff;
-    --md-sys-color-on-tertiary: #00344c;
-    --md-sys-color-tertiary-container: #00719e;
-    --md-sys-color-on-tertiary-container: #ffffff;
+    --md-sys-color-surface-tint: #7bdb91;
+    --md-sys-color-primary: #8deea2;
+    --md-sys-color-on-primary: #003917;
+    --md-sys-color-primary-container: #64c37c;
+    --md-sys-color-on-primary-container: #002b10;
+    --md-sys-color-inverse-primary: #006d33;
+    --md-sys-color-secondary: #a9d0ad;
+    --md-sys-color-on-secondary: #15371e;
+    --md-sys-color-secondary-container: #22442a;
+    --md-sys-color-on-secondary-container: #b3dab6;
+    --md-sys-color-tertiary: #b6deff;
+    --md-sys-color-on-tertiary: #00344e;
+    --md-sys-color-tertiary-container: #56b8f8;
+    --md-sys-color-on-tertiary-container: #00273d;
     --md-sys-color-error: #ffb4ab;
     --md-sys-color-on-error: #690005;
     --md-sys-color-error-container: #93000a;
     --md-sys-color-on-error-container: #ffdad6;
 }
+/*
+:root,
+:host {
+    --md-sys-color-background: #18130b;
+    --md-sys-color-on-background: #ede1d3;
+    --md-sys-color-surface: #18130b;
+    --md-sys-color-surface-dim: #18130b;
+    --md-sys-color-surface-bright: #3f382f;
+    --md-sys-color-surface-container-lowest: #120d06;
+    --md-sys-color-surface-container-low: #201b12;
+    --md-sys-color-surface-container: #251f16;
+    --md-sys-color-surface-container-high: #2f2920;
+    --md-sys-color-surface-container-highest: #3b342a;
+    --md-sys-color-on-surface: #ede1d3;
+    --md-sys-color-surface-variant: #504534;
+    --md-sys-color-on-surface-variant: #d5c4ae;
+    --md-sys-color-inverse-surface: #ede1d3;
+    --md-sys-color-inverse-on-surface: #362f26;
+    --md-sys-color-outline: #9d8f7b;
+    --md-sys-color-outline-variant: #504534;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-surface-tint: #ffba3e;
+    --md-sys-color-primary: #ffd28d;
+    --md-sys-color-on-primary: #432c00;
+    --md-sys-color-primary-container: #e5a427;
+    --md-sys-color-on-primary-container: #342100;
+    --md-sys-color-inverse-primary: #7f5700;
+    --md-sys-color-secondary: #e6c188;
+    --md-sys-color-on-secondary: #432c02;
+    --md-sys-color-secondary-container: #543b0f;
+    --md-sys-color-on-secondary-container: #f5cf95;
+    --md-sys-color-tertiary: #cee36a;
+    --md-sys-color-on-tertiary: #2c3400;
+    --md-sys-color-tertiary-container: #a5b945;
+    --md-sys-color-on-tertiary-container: #212800;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffdad6;
+}
+*/
+
+.text-on-bg {
+    color: var(--md-sys-color-on-background);
+}
+
+.text-primary {
+    color: var(--md-sys-color-primary);
+}
+
+.text-secondary {
+    color: var(--md-sys-color-secondary);
+}
+
+.text-tertiary {
+    color: var(--md-sys-color-tertiary);
+}
+
+.text-outline {
+    color: var(--md-sys-color-outline);
+}
+.text-inverse-primary {
+    color: var(--md-sys-color-inverse-primary);
+}
+.text-on-surface-variant {
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.text-error {
+    color: var(--md-sys-color-error);
+}
+.text-on-primary {
+    color: var(--md-sys-color-on-primary);
+}
+.text-on-secondary {
+    color: var(--md-sys-color-on-secondary);
+}
+.text-on-tertiary {
+    color: var(--md-sys-color-on-tertiary);
+}
+.text-on-error {
+    color: var(--md-sys-color-on-error);
+}
+.text-on-surface {
+    color: var(--md-sys-color-on-surface);
+}
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 hr {
@@ -73,7 +162,7 @@ md-secondary-tab {
 .navbarLogo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
+    color: var(--md-sys-color-on-background);
     letter-spacing: 0.1em;
     margin-right: 32px;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -91,4 +180,26 @@ md-secondary-tab {
     background: var(--md-sys-color-background);
     height: 100vh;
     width: 100%;
+}
+
+md-filled-tonal-button,
+md-text-button {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    min-width: max-content;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    color: var(--md-sys-color-on-background);
+    fill: var(--md-sys-color-on-background);
+}
+
+.App {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--md-sys-color-on-background);
+    background-color: var(--md-sys-color-background);
+    overflow-x: hidden;
 }
