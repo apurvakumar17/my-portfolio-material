@@ -7,7 +7,7 @@
 
 # Developer Portfolio
 
-#### I have made my porfolio very passionately implementing the Google Material Web Theme which we see accross all Google Apps and Website.
+#### I am making a personal portfolio website using React+Vite implementing the Google Material Web Theme which we see accross all Google Apps and Website.
 
 ---
 
