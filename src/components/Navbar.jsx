@@ -7,9 +7,9 @@ function Navbar() {
         <nav className="nav">
             <div className="navbarHeader">
                 <span className="navbarLogo">apurvakumar17</span>
-                <md-tabs>
-                    <md-secondary-tab>About</md-secondary-tab>
-                    <md-secondary-tab>Experience</md-secondary-tab>
+                <md-tabs className="navbarTabs block">
+                    <md-secondary-tab ><a href="/#about">About</a></md-secondary-tab>
+                    <md-secondary-tab><a href="/#experience">Experience</a></md-secondary-tab>
                     <md-secondary-tab>Skills</md-secondary-tab>
                     <md-secondary-tab>Education</md-secondary-tab>
                     <md-secondary-tab>Projects</md-secondary-tab>

@@ -42,19 +42,19 @@ function SelfCode() {
                         <span className="text-on-surface-variant">
                             {"', '"}
                         </span>
-                        <span className="text-secondary">NextJS</span>
+                        <span className="text-secondary">JavaScript</span>
                         <span className="text-on-surface-variant">
                             {"', '"}
                         </span>
-                        <span className="text-secondary">Redux</span>
+                        <span className="text-secondary">Python</span>
                         <span className="text-on-surface-variant">
                             {"', '"}
                         </span>
-                        <span className="text-secondary">Express</span>
+                        <span className="text-secondary">C</span>
                         <span className="text-on-surface-variant">
                             {"', '"}
                         </span>
-                        <span className="text-secondary">NestJS</span>
+                        <span className="text-secondary">Java</span>
                         <span className="text-on-surface-variant">
                             {"', '"}
                         </span>
@@ -62,15 +62,11 @@ function SelfCode() {
                         <span className="text-on-surface-variant">
                             {"', '"}
                         </span>
-                        <span className="text-secondary">MongoDB</span>
+                        <span className="text-secondary">Illustrator</span>
                         <span className="text-on-surface-variant">
                             {"', '"}
                         </span>
-                        <span className="text-secondary">Docker</span>
-                        <span className="text-on-surface-variant">
-                            {"', '"}
-                        </span>
-                        <span className="text-secondary">AWS</span>
+                        <span className="text-secondary">Photoshop</span>
                         <span className="text-on-surface-variant">{"'],"}</span>
                     </div>
                     <div>
