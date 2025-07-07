@@ -16,7 +16,7 @@ function Experience() {
             <div className="flex justify-center my-6 lg:py-10">
                 <div className="flex items-center">
                     <span className="w-25 h-[2px] bg-[var(--md-sys-color-inverse-primary)]"></span>
-                    <span className="bg-[var(--md-sys-color-inverse-primary)] text-[var(--md-sys-color-on-surface)] text-xl px-4 py-1.5 rounded-md shadow-sm tracking-wider">
+                    <span className="bg-[var(--md-sys-color-inverse-primary)] text-[var(--md-sys-color-on-surface)] text-xl p-2 px-5 rounded-md shadow-sm tracking-wider">
                         The Journey
                     </span>
                     <span className="w-25 h-[2px] bg-[var(--md-sys-color-inverse-primary)]"></span>

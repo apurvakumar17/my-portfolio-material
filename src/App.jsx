@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import AboutSection from "./components/AboutSection";
 import Experience from "./components/Experience";
 import SkillsSection from "./components/SkillsSection";
+import ProjectsSection from "./components/ProjectsSection";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
                 <AboutSection />
                 <Experience />
                 <SkillsSection />
+                <ProjectsSection />
             </div>
             
         </div>

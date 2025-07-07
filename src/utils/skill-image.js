@@ -81,12 +81,15 @@ import kubernetes from '../assets/svg/skills/kubernetes.svg'
 import linux from '../assets/svg/skills/linux.svg'
 import sqlalchemy from '../assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../assets/svg/skills/fastapi.svg'
+import powerbi from '../assets/svg/skills/powerbi.svg'
 
 
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
   switch (skillID) {
+    case 'powerbi':
+      return powerbi;
     case 'gcp':
       return gcp;
     case 'html':

@@ -7,7 +7,7 @@ function SkillsSection() {
     return (
         <div
             id="skills"
-            className="relative z-50 border-t mb-12 lg:mb-24 border-[var(--md-sys-color-surface-container-high)]"
+            className="relative z-50 border-t mb-18 lg:mb-20 border-[var(--md-sys-color-surface-container-high)]"
         >
             <div className="w-[100px] h-[100px] bg-[var(--md-sys-color-primary)] rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl opacity-20"></div>
 
@@ -55,7 +55,7 @@ function SkillsSection() {
                                             alt={skill}
                                             width={40}
                                             height={40}
-                                            className="h-full w-auto drop-shadow-[0_0_4px_var(--md-sys-color-primary-container)]"
+                                            className="h-full w-auto drop-shadow-[0_0_20px_var(--md-sys-color-primary-container)]"
                                         />
                                     </div>
                                     <p className="text-[var(--md-sys-color-on-surface)] text-sm sm:text-lg">

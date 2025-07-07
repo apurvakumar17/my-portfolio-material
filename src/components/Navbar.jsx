@@ -8,11 +8,11 @@ function Navbar() {
             <div className="navbarHeader">
                 <span className="navbarLogo">apurvakumar17</span>
                 <md-tabs className="navbarTabs block">
-                    <md-secondary-tab ><a href="/#about">About</a></md-secondary-tab>
-                    <md-secondary-tab><a href="/#experience">Experience</a></md-secondary-tab>
-                    <md-secondary-tab>Skills</md-secondary-tab>
-                    <md-secondary-tab>Education</md-secondary-tab>
-                    <md-secondary-tab>Projects</md-secondary-tab>
+                    <a href="/#about"><md-secondary-tab >About</md-secondary-tab></a>
+                    <a href="/#experience"><md-secondary-tab>Experience</md-secondary-tab></a>
+                    <a href="/#skills"><md-secondary-tab>Skills</md-secondary-tab></a>
+                    <a href="/#projects"><md-secondary-tab>Projects</md-secondary-tab></a>
+                    <a href="/#contact"><md-secondary-tab>Contact Me</md-secondary-tab></a>
                 </md-tabs>
             </div>
             <hr></hr>
