@@ -10,7 +10,7 @@ function Experience() {
     return (
         <div
             id="experience"
-            className="relative z-50 my-12 lg:my-24 border-y border-[var(--md-sys-color-surface-container-high)]"
+            className="relative z-50 mt-12 lg:mt-24 border-y border-[var(--md-sys-color-surface-container-high)]"
         >
             {/* Section Heading */}
             <div className="flex justify-center my-6 lg:py-10">

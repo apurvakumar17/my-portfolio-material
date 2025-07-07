@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AboutSection from "./components/AboutSection";
 import Experience from "./components/Experience";
+import SkillsSection from "./components/SkillsSection";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -12,11 +13,12 @@ function App() {
         <div className="App ">
             <Navbar />
             <div
-                className="mainpage min-h-screen relative mx-auto px-6 sm:px-12 lg:px-0 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[85rem]"
+                className="mainpage min-h-screen relative mx-auto px-4 sm:px-6 md:px-8 lg:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[85rem]"
             >
                 <Hero />
                 <AboutSection />
                 <Experience />
+                <SkillsSection />
             </div>
             
         </div>
