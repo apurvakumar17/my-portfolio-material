@@ -126,7 +126,7 @@ Run this for activating tailwind*/
     --md-sys-color-on-error: #690005;
     --md-sys-color-error-container: #93000a;
     --md-sys-color-on-error-container: #ffdad6;
-} 
+}
 
 .text-on-bg {
     color: var(--md-sys-color-on-background);
@@ -252,234 +252,300 @@ md-text-button {
 
 /* Material-style custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+    width: 8px;
+    height: 8px;
+    background: var(--md-sys-color-background);
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--md-sys-color-primary);
-  border-radius: 9999px;
-  border: 2px solid transparent;
-  background-clip: content-box;
+    background-color: var(--md-sys-color-primary);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--md-sys-color-primary-container);
+    background-color: var(--md-sys-color-primary-container);
 }
 
 .text-trail {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .circular-text {
-  margin: 0 auto;
-  border-radius: 50%;
-  width: 200px;
-  position: relative;
-  height: 200px;
-  font-weight: bold;
-  /* color: var(--md-sys-color-on-surface); */
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 200px;
+    position: relative;
+    height: 200px;
+    font-weight: bold;
+    /* color: var(--md-sys-color-on-surface); */
     color: var(--md-sys-color-on-background);
-  font-weight: 900;
-  text-align: center;
-  cursor: pointer;
-  transform-origin: 50% 50%;
-  -webkit-transform-origin: 50% 50%;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
 }
 
 .circular-text span {
-  position: absolute;
-  display: inline-block;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  font-size: 24px;
-  transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 24px;
+    transition: all 0.5s cubic-bezier(0, 0, 0, 1);
 }
 
 .chroma-grid {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(var(--cols, 3), 320px);
-  grid-auto-rows: auto;
-  justify-content: center;
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-  padding-top: 3.2rem;
-  padding-bottom: 3.2rem;
-  box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(var(--cols, 3), 320px);
+    grid-auto-rows: auto;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    box-sizing: border-box;
 
-  --x: 50%;
-  --y: 50%;
-  --r: 220px;
+    --x: 50%;
+    --y: 50%;
+    --r: 220px;
 }
 
-
 @media (max-width: 1124px) {
-  .chroma-grid {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
-    gap: 2.5rem;
-    padding: 0.5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
+    .chroma-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
+        gap: 2.5rem;
+        padding: 0.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
-  .chroma-grid {
-    grid-template-columns: 320px;
-    gap: 0.75rem;
-    padding: 1rem;
-  }
+    .chroma-grid {
+        grid-template-columns: 320px;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
 }
 
 .chroma-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  height: 280px;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid #333;
-  transition: border-color 0.3s ease;
-  background: var(--card-gradient);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: border-color 0.3s ease;
+    background: var(--card-gradient);
 
-  --mouse-x: 50%;
-  --mouse-y: 50%;
-  --spotlight-color: rgba(255, 255, 255, 0.3);
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+    --spotlight-color: rgba(255, 255, 255, 0.3);
 }
 @media (max-width: 753px) {
     .chroma-card {
-        height: 280px
+        height: 280px;
     }
 }
 
 .chroma-card:hover {
-  border-color: var(--card-border);
+    border-color: var(--card-border);
 }
 
 .chroma-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y),
-      var(--spotlight-color),
-      transparent 70%);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  z-index: 2;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at var(--mouse-x) var(--mouse-y),
+        var(--spotlight-color),
+        transparent 70%
+    );
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 2;
 }
 
 .chroma-card:hover::before {
-  opacity: 1;
+    opacity: 1;
 }
 
 .chroma-img-wrapper {
-  position: relative;
-  z-index: 1;
-  flex: 1;
-  padding: 10px;
-  box-sizing: border-box;
-  background: transparent;
-  transition: background 0.3s ease;
-  overflow: hidden;
-  width: 100%
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    background: transparent;
+    transition: background 0.3s ease;
+    overflow: hidden;
+    width: 100%;
 }
 
 .chroma-img-wrapper img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-  display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
 }
 
 .chroma-info {
-  position: relative;
-  z-index: 1;
-  padding: 0.75rem 1rem;
-  color: #fff;
-  font-family: system-ui, sans-serif;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  row-gap: 0.25rem;
-  column-gap: 0.75rem;
+    position: relative;
+    z-index: 1;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    font-family: system-ui, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    row-gap: 0.25rem;
+    column-gap: 0.75rem;
 }
 
 .chroma-info .role,
 .chroma-info .handle {
-  color: #aaa;
+    color: #aaa;
 }
 
 .chroma-overlay {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 3;
-  backdrop-filter: grayscale(1) brightness(0.78);
-  -webkit-backdrop-filter: grayscale(1) brightness(0.78);
-  background: rgba(0, 0, 0, 0.001);
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 3;
+    backdrop-filter: grayscale(1) brightness(0.78);
+    -webkit-backdrop-filter: grayscale(1) brightness(0.78);
+    background: rgba(0, 0, 0, 0.001);
 
-  mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
-      transparent 0%,
-      transparent 15%,
-      rgba(0, 0, 0, 0.10) 30%,
-      rgba(0, 0, 0, 0.22) 45%,
-      rgba(0, 0, 0, 0.35) 60%,
-      rgba(0, 0, 0, 0.50) 75%,
-      rgba(0, 0, 0, 0.68) 88%,
-      white 100%);
-  -webkit-mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
-      transparent 0%,
-      transparent 15%,
-      rgba(0, 0, 0, 0.10) 30%,
-      rgba(0, 0, 0, 0.22) 45%,
-      rgba(0, 0, 0, 0.35) 60%,
-      rgba(0, 0, 0, 0.50) 75%,
-      rgba(0, 0, 0, 0.68) 88%,
-      white 100%);
+    mask-image: radial-gradient(
+        circle var(--r) at var(--x) var(--y),
+        transparent 0%,
+        transparent 15%,
+        rgba(0, 0, 0, 0.1) 30%,
+        rgba(0, 0, 0, 0.22) 45%,
+        rgba(0, 0, 0, 0.35) 60%,
+        rgba(0, 0, 0, 0.5) 75%,
+        rgba(0, 0, 0, 0.68) 88%,
+        white 100%
+    );
+    -webkit-mask-image: radial-gradient(
+        circle var(--r) at var(--x) var(--y),
+        transparent 0%,
+        transparent 15%,
+        rgba(0, 0, 0, 0.1) 30%,
+        rgba(0, 0, 0, 0.22) 45%,
+        rgba(0, 0, 0, 0.35) 60%,
+        rgba(0, 0, 0, 0.5) 75%,
+        rgba(0, 0, 0, 0.68) 88%,
+        white 100%
+    );
 }
 
 .chroma-fade {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 4;
-  backdrop-filter: grayscale(1) brightness(0.78);
-  -webkit-backdrop-filter: grayscale(1) brightness(0.78);
-  background: rgba(0, 0, 0, 0.001);
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 4;
+    backdrop-filter: grayscale(1) brightness(0.78);
+    -webkit-backdrop-filter: grayscale(1) brightness(0.78);
+    background: rgba(0, 0, 0, 0.001);
 
-  mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
-      white 0%,
-      white 15%,
-      rgba(255, 255, 255, 0.90) 30%,
-      rgba(255, 255, 255, 0.78) 45%,
-      rgba(255, 255, 255, 0.65) 60%,
-      rgba(255, 255, 255, 0.50) 75%,
-      rgba(255, 255, 255, 0.32) 88%,
-      transparent 100%);
-  -webkit-mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
-      white 0%,
-      white 15%,
-      rgba(255, 255, 255, 0.90) 30%,
-      rgba(255, 255, 255, 0.78) 45%,
-      rgba(255, 255, 255, 0.65) 60%,
-      rgba(255, 255, 255, 0.50) 75%,
-      rgba(255, 255, 255, 0.32) 88%,
-      transparent 100%);
+    mask-image: radial-gradient(
+        circle var(--r) at var(--x) var(--y),
+        white 0%,
+        white 15%,
+        rgba(255, 255, 255, 0.9) 30%,
+        rgba(255, 255, 255, 0.78) 45%,
+        rgba(255, 255, 255, 0.65) 60%,
+        rgba(255, 255, 255, 0.5) 75%,
+        rgba(255, 255, 255, 0.32) 88%,
+        transparent 100%
+    );
+    -webkit-mask-image: radial-gradient(
+        circle var(--r) at var(--x) var(--y),
+        white 0%,
+        white 15%,
+        rgba(255, 255, 255, 0.9) 30%,
+        rgba(255, 255, 255, 0.78) 45%,
+        rgba(255, 255, 255, 0.65) 60%,
+        rgba(255, 255, 255, 0.5) 75%,
+        rgba(255, 255, 255, 0.32) 88%,
+        transparent 100%
+    );
 
-  opacity: 1;
-  transition: opacity 0.25s ease;
+    opacity: 1;
+    transition: opacity 0.25s ease;
 }
+
+.contact-form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px 25px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    resize: none;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+

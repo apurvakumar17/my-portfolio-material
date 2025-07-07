@@ -6,7 +6,7 @@ function ProjectsSection() {
     
     return (
         <div id="projects">
-            <div style={{ height: "950px", position: "relative" }}>
+            <div className="relative h-full">
                 <div className="sticky top-10 mb-20">
                     <div className="w-[80px] h-[80px] bg-[var(--md-sys-color-primary)] rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl  opacity-30"></div>
                     <div className="flex items-center justify-start relative">
