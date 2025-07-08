@@ -12,8 +12,8 @@ function ContactForm3() {
         message: "",
     });
 
-    const BOT_TOKEN = "7449718105:AAGpBToWqXvMtfBLvWMHaiXAuxQJ_GPbsZA"; // Replace with your actual token
-    const CHAT_ID = "1531543926"; // Replace with your chat ID
+    const BOT_TOKEN = "telegram-bot-token"; // Replace with your actual token
+    const CHAT_ID = "telegram-chat-id"; // Replace with your chat ID
 
     const handleSendToTelegram = async (e) => {
         e.preventDefault();

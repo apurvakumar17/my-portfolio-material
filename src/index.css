@@ -1,7 +1,18 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* npx @tailwindcss/cli -i ./src/index.css -o ./src/output.css --watch
 
 Run this for activating tailwind*/
+
+
+:root {
+  --main-font: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
 /*
 :root,
 :host {

@@ -6,7 +6,7 @@ export const projects = [
         handle: "by apurvakumar17",
         borderColor: "#3B82F6",
         gradient: "linear-gradient(145deg, #3B82F6, #000)",
-        url: "https://github.com/sarahjohnson",
+        url: "https://youtu.be/RKI0KkEgLRg",
     },
     {
         image: "/image/tictactoe.png",
@@ -15,7 +15,7 @@ export const projects = [
         handle: "by apurvakumar17",
         borderColor: "#10B981",
         gradient: "linear-gradient(180deg, #10B981, #000)",
-        url: "https://linkedin.com/in/mikechen",
+        url: "https://youtu.be/H1oXBdJwz8g",
     },
     {
         image: "/image/snake_game.png",
@@ -24,7 +24,7 @@ export const projects = [
         handle: "by apurvakumar17",
         borderColor: "#F59E0B",
         gradient: "linear-gradient(210deg, #F59E0B, #000)",
-        url: "https://dribbble.com/emilydavis",
+        url: "https://youtu.be/6F4Ql-G_K8Y",
     },
     {
         image: "/image/matrix_magic.png",
@@ -33,7 +33,7 @@ export const projects = [
         handle: "by apurvakumar17",
         borderColor: "#EF4444",
         gradient: "linear-gradient(195deg, #EF4444, #000)",
-        url: "https://kaggle.com/davidsmith",
+        url: "https://youtu.be/gbFuEY45inQ",
     },
     {
         image: "/image/3in1.png",
@@ -42,7 +42,7 @@ export const projects = [
         handle: "by apurvakumar17",
         borderColor: "#8B5CF6",
         gradient: "linear-gradient(160deg, #8B5CF6, #000)",
-        url: "https://behance.net/lindapark",
+        url: "https://youtu.be/_pvxeHCIqag",
     },
     {
         image: "/image/music_player.png",
@@ -51,6 +51,6 @@ export const projects = [
         handle: "by apurvakumar17",
         borderColor: "#EC4899",
         gradient: "linear-gradient(175deg, #EC4899, #000)",
-        url: "https://github.com/jasonlee",
+        url: "https://youtu.be/OkJa1yFCu14",
     },
 ];

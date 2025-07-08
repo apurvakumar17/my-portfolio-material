@@ -6,9 +6,8 @@ import { FaFacebook, FaStackOverflow } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoGithub, IoMdCall } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
-import ContactForm from "./ContactForm";
-import ContactForm2 from "./ContactForm2.jsx";
 import ContactForm3 from "./ContactForm3.jsx";
+import ContactForm4 from "./ContactForm4.jsx";
 
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -30,7 +29,7 @@ function ContactSection() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-                <ContactForm3 />
+                <ContactForm4 />
 
                 <div className="lg:w-3/4">
                     <div className="flex flex-col gap-5 lg:gap-9">

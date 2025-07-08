@@ -1143,6 +1143,13 @@
     }
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+  --main-font: 'Roboto', sans-serif;
+}
+body {
+  font-family: var(--main-font);
+}
 :root, :host {
   --md-sys-color-background: #18130b;
   --md-sys-color-on-background: #ede1d3;
