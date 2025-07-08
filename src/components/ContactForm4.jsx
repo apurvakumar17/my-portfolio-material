@@ -24,7 +24,7 @@ function ContactForm4() {
 
     try {
       setIsLoading(true);
-      const res = await fetch("https://telegram-backend-for-portfolio.onrender.com/api/send-message", {
+      const res = await fetch("/api/send-message", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message }),
