@@ -76,16 +76,18 @@ function Hero() {
 
                     {/* CONTACT & RESUME BUTTONS */}
                     <div className="flex items-center gap-3">
-                        <md-filled-tonal-button trailing-icon>
-                            Contact
-                            <svg
-                                slot="icon"
-                                viewBox="0 0 48 48"
-                                fill="currentColor"
-                            >
-                                <path d="M24 4a10 10 0 0 1 10 10 10 10 0 0 1-10 10 10 10 0 0 1-10-10A10 10 0 0 1 24 4Zm0 24c7.72 0 14 4.48 14 10v2H10v-2c0-5.52 6.28-10 14-10Zm14.7-6.9-3.95 3.95L32.8 23l3.95-3.95-3.95-3.95L34.75 14l3.95 3.95L42.65 14 44 15.35l-3.95 3.95L44 23.25 42.65 24.6l-3.95-3.95Z" />
-                            </svg>
-                        </md-filled-tonal-button>
+                        <a href="/#contact">
+                            <md-filled-tonal-button trailing-icon>
+                                Contact
+                                <svg
+                                    slot="icon"
+                                    viewBox="0 0 48 48"
+                                    fill="currentColor"
+                                >
+                                    <path d="M24 4a10 10 0 0 1 10 10 10 10 0 0 1-10 10 10 10 0 0 1-10-10A10 10 0 0 1 24 4Zm0 24c7.72 0 14 4.48 14 10v2H10v-2c0-5.52 6.28-10 14-10Zm14.7-6.9-3.95 3.95L32.8 23l3.95-3.95-3.95-3.95L34.75 14l3.95 3.95L42.65 14 44 15.35l-3.95 3.95L44 23.25 42.65 24.6l-3.95-3.95Z" />
+                                </svg>
+                            </md-filled-tonal-button>
+                        </a>
                         <md-text-button
                             trailing-icon
                             target="_blank"
@@ -101,7 +103,6 @@ function Hero() {
 
                 {/* RIGHT CODE SECTION */}
                 <SelfCode />
-                
             </div>
         </section>
     );

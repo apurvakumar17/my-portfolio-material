@@ -4,6 +4,9 @@
 
 Run this for activating tailwind*/
 
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --main-font: 'Roboto', sans-serif;
