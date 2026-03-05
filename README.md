@@ -15,3 +15,6 @@
 
 ![](./public/image/screen1.png)
 ![](./public/image/screen2.png)
+
+
+`npx tailwindcss -i ./src/index.css -o ./src/output.css --watch` run this command for updating css styling
