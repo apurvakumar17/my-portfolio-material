@@ -1,23 +1,37 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* npx @tailwindcss/cli -i ./src/index.css -o ./src/output.css --watch
-
-Run this for activating tailwind*/
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 :root {
-  --main-font: 'Roboto', sans-serif;
+    --main-font: 'Roboto', sans-serif;
+
+    /* Apply font to Material Web components */
+    --md-ref-typeface-plain: var(--main-font);
+    --md-ref-typeface-brand: var(--main-font);
+    --md-sys-typescale-label-large-font-family: var(--main-font);
+    --md-sys-typescale-body-large-font-family: var(--main-font);
+    --md-sys-typescale-body-medium-font-family: var(--main-font);
+    --md-sys-typescale-body-small-font-family: var(--main-font);
+    --md-sys-typescale-title-large-font-family: var(--main-font);
+    --md-sys-typescale-title-medium-font-family: var(--main-font);
+    --md-sys-typescale-title-small-font-family: var(--main-font);
+    --md-sys-typescale-headline-large-font-family: var(--main-font);
+    --md-sys-typescale-headline-medium-font-family: var(--main-font);
+    --md-sys-typescale-headline-small-font-family: var(--main-font);
+    --md-sys-typescale-display-large-font-family: var(--main-font);
+    --md-sys-typescale-display-medium-font-family: var(--main-font);
+    --md-sys-typescale-display-small-font-family: var(--main-font);
 }
 
 body {
-  font-family: var(--main-font);
+    font-family: var(--main-font);
 }
 
-/* 
-:root,
+
+/* :root,
 :host {
     --md-sys-color-background: #f7fbf0;
     --md-sys-color-on-background: #191d17;
@@ -59,7 +73,7 @@ body {
 } */
 
 
-:root,
+/* :root,
 :host {
     --md-sys-color-background: #0f1510;
     --md-sys-color-on-background: #dfe4db;
@@ -98,7 +112,7 @@ body {
     --md-sys-color-on-error: #690005;
     --md-sys-color-error-container: #93000a;
     --md-sys-color-on-error-container: #ffdad6;
-} 
+}  */
 
 
 /* :root,
@@ -142,6 +156,47 @@ body {
     --md-sys-color-on-error-container: #ffdad6;
 } */
 
+:root,
+:host {
+    --md-sys-color-background: #12131c;
+    --md-sys-color-on-background: #e3e1ef;
+    --md-sys-color-surface: #12131c;
+    --md-sys-color-surface-dim: #12131c;
+    --md-sys-color-surface-bright: #383843;
+    --md-sys-color-surface-container-lowest: #0d0d17;
+    --md-sys-color-surface-container-low: #1a1b24;
+    --md-sys-color-surface-container: #1e1f29;
+    --md-sys-color-surface-container-high: #292933;
+    --md-sys-color-surface-container-highest: #34343e;
+    --md-sys-color-on-surface: #e3e1ef;
+    --md-sys-color-surface-variant: #454556;
+    --md-sys-color-on-surface-variant: #c5c5d9;
+    --md-sys-color-inverse-surface: #e3e1ef;
+    --md-sys-color-inverse-on-surface: #2f303a;
+    --md-sys-color-outline: #8f8fa2;
+    --md-sys-color-outline-variant: #454556;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-surface-tint: #bec2ff;
+    --md-sys-color-primary: #bec2ff;
+    --md-sys-color-on-primary: #000aa7;
+    --md-sys-color-primary-container: #202de3;
+    --md-sys-color-on-primary-container: #edebff;
+    --md-sys-color-inverse-primary: #3643f2;
+    --md-sys-color-secondary: #bec2ff;
+    --md-sys-color-on-secondary: #202773;
+    --md-sys-color-secondary-container: #313884;
+    --md-sys-color-on-secondary-container: #d0d2ff;
+    --md-sys-color-tertiary: #f8acff;
+    --md-sys-color-on-tertiary: #570067;
+    --md-sys-color-tertiary-container: #8800a0;
+    --md-sys-color-on-tertiary-container: #ffe7fc;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffdad6;
+}
+
 .text-on-bg {
     color: var(--md-sys-color-on-background);
 }
@@ -161,9 +216,11 @@ body {
 .text-outline {
     color: var(--md-sys-color-outline);
 }
+
 .text-inverse-primary {
     color: var(--md-sys-color-inverse-primary);
 }
+
 .text-on-surface-variant {
     color: var(--md-sys-color-on-surface-variant);
 }
@@ -171,18 +228,23 @@ body {
 .text-error {
     color: var(--md-sys-color-error);
 }
+
 .text-on-primary {
     color: var(--md-sys-color-on-primary);
 }
+
 .text-on-secondary {
     color: var(--md-sys-color-on-secondary);
 }
+
 .text-on-tertiary {
     color: var(--md-sys-color-on-tertiary);
 }
+
 .text-on-error {
     color: var(--md-sys-color-on-error);
 }
+
 .text-on-surface {
     color: var(--md-sys-color-on-surface);
 }
@@ -196,9 +258,11 @@ hr {
     height: 1px;
     background-color: var(--md-sys-color-outline);
 }
+
 md-tabs {
     height: 60px;
-    @media (width <= 830px) {
+
+    @media (width <=830px) {
         display: none;
     }
 }
@@ -235,8 +299,10 @@ md-secondary-tab {
     left: 0;
     z-index: 100;
 }
+
 .mainpage {
-    padding-top: 60px; /* Adjusted to match the height of the navbar */
+    padding-top: 60px;
+    /* Adjusted to match the height of the navbar */
     background: var(--md-sys-color-background);
     height: 100vh;
     width: 100%;
@@ -373,6 +439,7 @@ md-text-button {
     --mouse-y: 50%;
     --spotlight-color: rgba(255, 255, 255, 0.3);
 }
+
 @media (max-width: 753px) {
     .chroma-card {
         height: 280px;
@@ -387,11 +454,9 @@ md-text-button {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(
-        circle at var(--mouse-x) var(--mouse-y),
-        var(--spotlight-color),
-        transparent 70%
-    );
+    background: radial-gradient(circle at var(--mouse-x) var(--mouse-y),
+            var(--spotlight-color),
+            transparent 70%);
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -450,28 +515,24 @@ md-text-button {
     -webkit-backdrop-filter: grayscale(1) brightness(0.78);
     background: rgba(0, 0, 0, 0.001);
 
-    mask-image: radial-gradient(
-        circle var(--r) at var(--x) var(--y),
-        transparent 0%,
-        transparent 15%,
-        rgba(0, 0, 0, 0.1) 30%,
-        rgba(0, 0, 0, 0.22) 45%,
-        rgba(0, 0, 0, 0.35) 60%,
-        rgba(0, 0, 0, 0.5) 75%,
-        rgba(0, 0, 0, 0.68) 88%,
-        white 100%
-    );
-    -webkit-mask-image: radial-gradient(
-        circle var(--r) at var(--x) var(--y),
-        transparent 0%,
-        transparent 15%,
-        rgba(0, 0, 0, 0.1) 30%,
-        rgba(0, 0, 0, 0.22) 45%,
-        rgba(0, 0, 0, 0.35) 60%,
-        rgba(0, 0, 0, 0.5) 75%,
-        rgba(0, 0, 0, 0.68) 88%,
-        white 100%
-    );
+    mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
+            transparent 0%,
+            transparent 15%,
+            rgba(0, 0, 0, 0.1) 30%,
+            rgba(0, 0, 0, 0.22) 45%,
+            rgba(0, 0, 0, 0.35) 60%,
+            rgba(0, 0, 0, 0.5) 75%,
+            rgba(0, 0, 0, 0.68) 88%,
+            white 100%);
+    -webkit-mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
+            transparent 0%,
+            transparent 15%,
+            rgba(0, 0, 0, 0.1) 30%,
+            rgba(0, 0, 0, 0.22) 45%,
+            rgba(0, 0, 0, 0.35) 60%,
+            rgba(0, 0, 0, 0.5) 75%,
+            rgba(0, 0, 0, 0.68) 88%,
+            white 100%);
 }
 
 .chroma-fade {
@@ -483,28 +544,24 @@ md-text-button {
     -webkit-backdrop-filter: grayscale(1) brightness(0.78);
     background: rgba(0, 0, 0, 0.001);
 
-    mask-image: radial-gradient(
-        circle var(--r) at var(--x) var(--y),
-        white 0%,
-        white 15%,
-        rgba(255, 255, 255, 0.9) 30%,
-        rgba(255, 255, 255, 0.78) 45%,
-        rgba(255, 255, 255, 0.65) 60%,
-        rgba(255, 255, 255, 0.5) 75%,
-        rgba(255, 255, 255, 0.32) 88%,
-        transparent 100%
-    );
-    -webkit-mask-image: radial-gradient(
-        circle var(--r) at var(--x) var(--y),
-        white 0%,
-        white 15%,
-        rgba(255, 255, 255, 0.9) 30%,
-        rgba(255, 255, 255, 0.78) 45%,
-        rgba(255, 255, 255, 0.65) 60%,
-        rgba(255, 255, 255, 0.5) 75%,
-        rgba(255, 255, 255, 0.32) 88%,
-        transparent 100%
-    );
+    mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
+            white 0%,
+            white 15%,
+            rgba(255, 255, 255, 0.9) 30%,
+            rgba(255, 255, 255, 0.78) 45%,
+            rgba(255, 255, 255, 0.65) 60%,
+            rgba(255, 255, 255, 0.5) 75%,
+            rgba(255, 255, 255, 0.32) 88%,
+            transparent 100%);
+    -webkit-mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
+            white 0%,
+            white 15%,
+            rgba(255, 255, 255, 0.9) 30%,
+            rgba(255, 255, 255, 0.78) 45%,
+            rgba(255, 255, 255, 0.65) 60%,
+            rgba(255, 255, 255, 0.5) 75%,
+            rgba(255, 255, 255, 0.32) 88%,
+            transparent 100%);
 
     opacity: 1;
     transition: opacity 0.25s ease;
@@ -561,5 +618,3 @@ md-text-button {
 .contact-form button:hover {
     background: #0056b3;
 }
-
-
