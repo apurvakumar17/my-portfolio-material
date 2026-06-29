@@ -1,12 +1,12 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
 html {
     scroll-behavior: smooth;
 }
 
 :root {
-    --main-font: 'Roboto', sans-serif;
+    --main-font: 'Google Sans', sans-serif;
 
     /* Apply font to Material Web components */
     --md-ref-typeface-plain: var(--main-font);
@@ -289,7 +289,7 @@ md-secondary-tab {
     color: var(--md-sys-color-on-background);
     letter-spacing: 0.1em;
     margin-right: 32px;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: var(--main-font);
 }
 
 .nav {
@@ -324,7 +324,7 @@ md-text-button {
 }
 
 .App {
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: var(--main-font);
     color: var(--md-sys-color-on-background);
     background-color: var(--md-sys-color-background);
     overflow-x: hidden;
@@ -492,7 +492,7 @@ md-text-button {
     z-index: 1;
     padding: 0.75rem 1rem;
     color: #fff;
-    font-family: system-ui, sans-serif;
+    font-family: var(--main-font);
     display: grid;
     grid-template-columns: 1fr auto;
     row-gap: 0.25rem;
@@ -574,7 +574,7 @@ md-text-button {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 10px;
-    font-family: sans-serif;
+    font-family: var(--main-font);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
