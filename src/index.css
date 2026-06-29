@@ -31,8 +31,8 @@ body {
 }
 
 
-/* :root,
-:host {
+:root[data-theme='light'],
+:host[data-theme='light'] {
     --md-sys-color-background: #f7fbf0;
     --md-sys-color-on-background: #191d17;
     --md-sys-color-surface: #f7fbf0;
@@ -70,7 +70,7 @@ body {
     --md-sys-color-on-error: #ffffff;
     --md-sys-color-error-container: #ffdad6;
     --md-sys-color-on-error-container: #410002;
-} */
+}
 
 
 /* :root,

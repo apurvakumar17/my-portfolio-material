@@ -1,5 +1,6 @@
 import React from "react";
 import { personalData } from "../utils/personal-data.js";
+import TiltedCard from "./TiltedCard";
 
 function AboutSection() {
     return (
@@ -25,13 +26,20 @@ function AboutSection() {
                 </div>
 
                 {/* Right Image Column */}
-                <div className="flex justify-center order-1 lg:order-2">
-                    <img
-                        src={personalData.profile}
-                        width={280}
-                        height={280}
-                        alt="Apurva Kumar"
-                        className="rounded-lg w-[280px] h-[280px] object-cover transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer border border-[var(--md-sys-color-outline-variant)]"
+                <div className="flex justify-center order-1 lg:order-2 items-center">
+                    <TiltedCard
+                        imageSrc={personalData.profile}
+                        altText="Apurva Kumar"
+                        captionText="Apurva Kumar"
+                        containerHeight="300px"
+                        containerWidth="300px"
+                        imageHeight="280px"
+                        imageWidth="280px"
+                        rotateAmplitude={12}
+                        scaleOnHover={1.12}
+                        showMobileWarning={false}
+                        showTooltip={true}
+                        imageClassName="grayscale hover:grayscale-0 transition-[filter] duration-700 cursor-pointer border border-[var(--md-sys-color-outline-variant)]"
                     />
                 </div>
             </div>
