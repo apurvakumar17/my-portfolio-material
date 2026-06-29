@@ -1,6 +1,6 @@
 import React from "react";
 import { personalData } from "../utils/personal-data.js";
-import TiltedCard from "./TiltedCard";
+import TiltedCard from "../helper/TiltedCard";
 
 function AboutSection() {
     return (

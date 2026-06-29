@@ -21,13 +21,19 @@ function SkillsSection() {
                 <div className="flex items-center mt-5">
                     <span className="w-24 h-[2px] bg-[var(--md-sys-color-inverse-primary)]"></span>
                     <span className="bg-[var(--md-sys-color-inverse-primary)] text-[var(--md-sys-color-on-surface)] w-fit p-2 px-5 text-xl rounded-md">
-                        Skills
+                        SKILLS
                     </span>
                     <span className="w-24 h-[2px] bg-[var(--md-sys-color-inverse-primary)]"></span>
                 </div>
             </div>
 
-            <div className="w-full my-12">
+            <div 
+                className="w-full my-12"
+                style={{
+                    maskImage: "linear-gradient(to right, transparent, black 15%, black 85%, transparent)",
+                    WebkitMaskImage: "linear-gradient(to right, transparent, black 15%, black 85%, transparent)"
+                }}
+            >
                 <Marquee
                     gradient={false}
                     speed={80}

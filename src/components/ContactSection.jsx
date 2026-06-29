@@ -9,10 +9,7 @@ import { MdAlternateEmail } from "react-icons/md";
 import ContactForm3 from "./ContactForm3.jsx";
 import ContactForm4 from "./ContactForm4.jsx";
 
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
+
 
 function ContactSection() {
     return (
@@ -69,6 +66,7 @@ function ContactSection() {
                             { icon: FaXTwitter, url: personalData.twitter },
                             { icon: FaStackOverflow, url: personalData.stackOverflow },
                             { icon: FaFacebook, url: personalData.facebook },
+                        // eslint-disable-next-line no-unused-vars
                         ].map(({ icon: Icon, url }, i) => (
                             <a key={i} target="_blank" rel="noopener noreferrer" href={url}>
                                 <Icon

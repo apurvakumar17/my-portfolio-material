@@ -1,3 +1,5 @@
+/* global process */
+
 export default async function handler(req, res) {
     if (req.method !== "POST") {
         return res
@@ -39,6 +41,7 @@ export default async function handler(req, res) {
                 .json({ success: false, message: "Telegram API failed" });
         }
     } catch (err) {
+        console.error("API error:", err);
         return res
             .status(500)
             .json({ success: false, message: "Server error" });

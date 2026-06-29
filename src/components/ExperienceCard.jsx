@@ -1,14 +1,17 @@
 import React from "react";
 import { BsPersonWorkspace } from "react-icons/bs";
+import BorderGlow from "../helper/BorderGlow";
 
 function ExperienceCard(props) {
     const { experience } = props;
     return (
-        <div
+        <BorderGlow
             key={experience.id}
-            className="relative overflow-hidden bg-[var(--md-sys-color-surface-container-highest)] text-[var(--md-sys-color-on-surface)] rounded-2xl p-5 shadow-md hover:shadow-lg transition-shadow duration-300 px-10"
+            backgroundColor="var(--md-sys-color-surface-container-highest)"
+            borderRadius={16}
+            className="p-5 px-10 text-[var(--md-sys-color-on-surface)] w-full"
+            colors={["var(--md-sys-color-primary)", "var(--md-sys-color-secondary)", "var(--md-sys-color-tertiary)"]}
         >
-
             {/* Duration */}
             <div className="flex justify-center mb-3">
                 <p className="text-xs sm:text-sm text-[var(--md-sys-color-on-surface-variant)] font-medium uppercase tracking-wide">
@@ -33,7 +36,7 @@ function ExperienceCard(props) {
                     </p>
                 </div>
             </div>
-        </div>
+        </BorderGlow>
     );
 }
 
